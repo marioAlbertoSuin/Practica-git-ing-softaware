@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lan='es'>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Calculadora basica</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<center>
+		<h1>Calculadora Basica</h1>
+		<form name="formularioCalculadora"><br>
+<input type="text" name="displayNumerosEntrada">
+<br>
+<input type="text" name="displayResultado" value="0">
+<br>
+<input type="button" class="limpiarPantalla" onClick="document.formularioCalculadora.displayResultado.value='0'" value="CE">
+<input type="button" class="limpiarPantalla" onClick="document.formularioCalculadora.reset(); blocdel = false;" value="C">
+<input type="button" class="limpiarPantalla" onClick="deletecarac()" value="◄">
+ 
+<input type="button" class="aritmetica" onClick="aritmetica('/')" value="÷">
+<br>
+<input type="button" onclick="escribir(this.value)" value="7">
+<input type="button" onclick="escribir(this.value)" value="8">
+<input type="button" onclick="escribir(this.value)" value="9">
+<input type="button" class="aritmetica" onClick="aritmetica('*')" value="×">
+<br>
+<input type="button" onclick="escribir(this.value)" value="4">
+<input type="button" onclick="escribir(this.value)" value="5">
+<input type="button" onclick="escribir(this.value)" value="6">
+<input type="button" class="aritmetica" onClick="aritmetica('-')" value="-">
+<br>
+<input type="button" onclick="escribir(this.value)" value="1">
+<input type="button" onclick="escribir(this.value)" value="2">
+<input type="button" onclick="escribir(this.value)" value="3">
+<input type="button" class="aritmetica" onClick="aritmetica('+')" value="+">
+<br>
+
+<input type="button" onclick="escribir(this.value)" value="0">
+<input type="button" onClick="escribir('.')" value=".">
+<input type="button" class="igual" onClick="calcular()" value="=">
+<br>
+</form>
+</center>
+    <script src="js/script.js"></script>
+  </body>
+</html>
